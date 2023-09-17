@@ -38,13 +38,22 @@ namespace WeatherApp
                 }
             }
 
+            responce.Close();
             richTextBox1.Text = answer;
+
 
             OpenWeather.OpenWeather ow = JsonConvert.DeserializeObject<OpenWeather.OpenWeather>(answer);
 
-            
+            label1.Text = ow.weather[0].main;
+            label2.Text = ow.weather[0].description;
+            label3.Text = "Средняя темература (°C): " + ow.main.Temp.ToString();
+            label6.Text = "Скорость (м/с): " + ow.wind.Speed.ToString();
+            label7.Text = "Направление: " + ow.wind.Deg.ToString();
+            label4.Text = "Влажность (%): " + ow.main.Humidity.ToString();
+            label5.Text = "Давление (мм): " + ((int)ow.main.Pressure).ToString();
 
-            
+
+
 
         }
 

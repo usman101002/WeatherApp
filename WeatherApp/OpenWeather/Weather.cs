@@ -12,15 +12,15 @@ namespace WeatherApp.OpenWeather
         public int id;
         public string main;
         public string description;
-        private string icon;
+        public string icon;
 
-        public Bitmap Icon
-        {
-            get
-            {
-                return new Bitmap(Image.FromFile($"Icons/{icon}@2x.png"));
-            }
-        }
+        //public Bitmap Icon
+        //{
+        //    get
+        //    {
+        //        return new Bitmap(Image.FromFile($"Icons/{icon}@2x.png"));
+        //    }
+        //}
 
 
 

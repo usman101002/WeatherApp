@@ -8,7 +8,7 @@ namespace WeatherApp.OpenWeather
 {
     internal class Clouds
     {
-        public double All;
+        public double all;
 
     }
 }

@@ -9,22 +9,22 @@ namespace WeatherApp.OpenWeather
 {
     internal class OpenWeather
     {
-        public Coord coord;
-        public Weather[] weather;
+        public Coord coord { get; set; }
+        public Weather weather;
 
         [JsonProperty("base")]
-        public string Base;
-        public Main main;
+        public string Base { get; set; }
+        public Main main { get; set; }
 
         public double visibility;
         public Wind wind;
-        public Clouds clouds;
+        public Clouds clouds { get; set; }
 
-        public double dt;
+        public double dt { get; set; }
         public Sys sys;
 
-        public int id;
-        public string name;
-        public double cod;
+        public int id { get; set; }
+        public string name { get; set; }
+        public double cod { get; set; }
     }
 }
