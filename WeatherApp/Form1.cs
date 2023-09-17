@@ -40,6 +40,7 @@ namespace WeatherApp
 
             richTextBox1.Text = answer;
 
+            OpenWeather.OpenWeather ow = JsonConvert.DeserializeObject<OpenWeather.OpenWeather>(answer);
 
 
 
