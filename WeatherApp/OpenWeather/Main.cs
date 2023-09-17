@@ -61,6 +61,20 @@ namespace WeatherApp.OpenWeather
             }
         }
 
+        private double _humidity;
+
+        public double Humidity
+        {
+            get
+            {
+                return _humidity;
+            }
+            set
+            {
+                _humidity = value;
+            }
+        }
+
 
     }
 }

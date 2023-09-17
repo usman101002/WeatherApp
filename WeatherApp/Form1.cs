@@ -42,7 +42,7 @@ namespace WeatherApp
 
             OpenWeather.OpenWeather ow = JsonConvert.DeserializeObject<OpenWeather.OpenWeather>(answer);
 
-            MessageBox.Show("Example of change123");
+            
 
             
 
